@@ -1,0 +1,31 @@
+modules:
+  webtrigger:
+    - key: rovo-testcase-generator-webtrigger-sync
+      function: sync
+      urlFormat: v2
+      request:
+        authentication: none
+      response:
+        type: dynamic
+    - key: rovo-testcase-generator-webtrigger-async
+      function: async
+      urlFormat: v2
+      request:
+        authentication: none
+      response:
+        type: dynamic
+  function:
+    - key: sync
+      handler: index.runSync
+    - key: async
+      handler: index.runAsync
+app:
+  runtime:
+    name: nodejs24.x
+    memoryMB: 256
+    architecture: arm64
+  id: ari:cloud:ecosystem::app/eea66061-47d4-471d-a8b2-c67e3ace3341
+permissions:
+  scopes:
+  - write:jira-work
+  

@@ -1,0 +1,12 @@
+{
+"issueKey": "BTS-1",
+"testCases": [
+{
+"tcNumber": "TC001",
+"scenarioName": "Valid Login",
+"testCaseName": "Login with valid credentials",
+"steps": "1. Open login page\n2. Enter valid username and password\n3. Click Login",
+"expectedResult": "User successfully logs in"
+}
+]
+}
